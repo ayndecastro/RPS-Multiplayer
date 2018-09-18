@@ -1,1 +1,5 @@
 README#
+RPS-MULTIPLAYER
+ROCK > scissors
+SCISSORS > paper
+PAPER > rock
