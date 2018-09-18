@@ -28,6 +28,8 @@ var config = {
 
 $(document).ready(function(){
 
+	$("embed").hide();
+
 	//this object handles the score check
 	var CheckWinners={
 			//restart the game to turn 1
