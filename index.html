@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ <!-- font -->
+ <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+<!-- jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<title>Rock Paper Scissors Multiplayer</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8" >
+				<!-- User name input -->
+				<!-- <h1 id="RPS" class="text-light">ROCK PAPER SCISSORS</h1> -->
+				<br><br><br>		
+				<div id="greetings" class='justify-content-center p-3'></div>
+				<br><br>
+				<div class='text-center bg-dark text-light' id="whose-turn"></div>
+				<!--<form>
+				<input type="text" id="name-input">
+				<input type="submit" id="submit-name">
+				</form> -->
+			<div class="col-lg-2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<br><br><br>		
+
+		<div class="row">
+			<!-- <div class="col-lg-1"></div> -->
+			
+			<div class="col-lg-4" id="player-1">
+				<!-- Player 1 choices -->
+				
+					<p class="text-center m-3" id="player1-name"></p>
+
+					<hr>
+
+					<div class='text-center' id ="waiting1"></div>
+
+					<div id="player1choices">
+					<!-- choices -->
+						<button class="choice1 btn btn-black mx-5" id="rock1" value="rock"></button><br><br>
+						<button class="choice1 btn btn-black mx-5" id="paper1" value="paper"></button><br><br>
+						<button class="choice1 btn btn-black mx-5" id="scissors1" value="scissors"></button>
+					</div>
+					<div id="group1message"></div>
+				<hr>
+				<p id="score1">
+					<span id="win1"></span>
+					<span id="lose1"></span>
+				</p>		
+
+			</div>
+
+			<div class="col-lg-0.5"></div>
+
+			<div class="col-lg-3" id="score">
+				<!-- Winner dispaly -->	
+					<p class='align-self-center text-center bg-dark text-light' id="winner"></p>
+			</div>
+
+			<div class="col-lg-0.5"></div>
+
+			<div class="col-lg-4" id="player-2">
+				<!-- Player 2 choices -->
+
+						<p class=" text-center m-3" id="player2-name"></p>
+						<hr>
+						<div id ="waiting2"></div>
+
+						<div id="player2choices">
+						<!-- choices -->
+							<button class="choice2 btn btn-black mx-5" id="rock2" value="rock"></button><br><br>
+							<button class="choice2 btn btn-black mx-5" id="paper2" value="paper"></button><br><br>
+							<button class="choice2 btn btn-black mx-5" id="scissors2" value="scissors"></button>
+						</div>
+						<div id="group2message"></div>	
+					<hr>
+					<p id="score2">
+						<span id="win2"></span>
+						<span id="lose2"></span>
+					</p>
+		
+			</div>
+
+			<!-- <div class="col-lg-1"></div> -->
+	
+		</div><!-- row  -->
+	</div><!-- container  -->
+
+	<div class="container">
+		<br><br><br>		
+		<div class="row">
+
+			<div class="col-lg-2"></div>
+
+			<div class="col-lg-8 chat">
+				<br><br><br>			
+				<div class="row">
+					<!-- display chats -->
+					<div class="col-lg-12" id="chat-window"></div>
+				</div>
+				<!-- chat intake -->
+				<br><br><br>
+				<div class="row">
+					<div class="col-lg-12">
+						<form>
+						<input type="text" rows="10"class='form-control' id="chat-input">
+						<br><br>
+						<input type="submit" class='form-control btn btn-dark m-2' id="submit-chat"  value="SEND"/>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-2 m-3"></div>
+		</div>
+	</div>
+	<!-- bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- js -->
+<script type="text/javascript" src="assets/javaScript/app.js"></script>
+</body>
+</html>
